@@ -8,11 +8,3 @@ function tocaSomClap(){
     }
     document.querySelector(".tecla_clap").onclick = tocaSomClap;
 
-const listaDeTeclas = document.querySelectorAll(".tecla");    
-
-listaDeTeclas[0].onclick = tocaSomPom;
-
-let contador = 0;
-// Estrutura de repetição - Enquanto
-while() {
-}
