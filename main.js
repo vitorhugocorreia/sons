@@ -1,6 +1,6 @@
 //criando/declarando a função tocaSomPom
-function tocaSomPom(){
-    document.querySelector("#som_tecla_pom").play();
+function tocaSom(idElementoAudio){
+    document.querySelector(idElementoAudio).play();
     }
 //chamando/invocando a função tocaSomPom pelo clique do botão pom
     document.querySelector(".tecla_pom").onclick = tocaSomPom;
