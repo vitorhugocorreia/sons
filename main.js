@@ -15,7 +15,6 @@ let contador = 0;
 // Estrutura de repetição - Enquanto
 while(contador < listaDeTeclas.length){
     listaDeTeclas[contador].onclick = tocaSomPom;
-    contador = contador + 1;
 
-    console.log(contador);
+    contador = contador + 1;
 }
