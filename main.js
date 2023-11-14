@@ -7,7 +7,7 @@ function tocaSom(idElementoAudio){
 const listaDeTeclas = document.querySelectorAll('.tecla');
 //estrutura de repetição "while" significa 
 //"enquanto algo acontecer" mudou o while para "for"
-for(let contador = 0;contador < listaDeTeclas.length; contador = contador++){
+for(let contador = 0;contador < listaDeTeclas.length; contador++){
     const tecla = listaDeTeclas[contador];
     const efeito = tecla.classList[1]; //acessa o 2º item da classe de teclas
     const idAudio = `#som_${efeito}`; //template string
@@ -15,7 +15,9 @@ for(let contador = 0;contador < listaDeTeclas.length; contador = contador++){
         tocaSom(idAudio);
     }
    tecla.onkeydown = function (){
-    tecla.classList.add('ativa');
+    if(EventCounts.code != 'Tab'){
+        tecla.classList.add('ativa');
+    }
    }
    tecla.onkeyup = function(){
     tecla.classList.remove('ativa');
